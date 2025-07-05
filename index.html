@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="fixed top-0 left-0 right-0 bg-white z-50 px-4 py-2 border-b flex items-center justify-between"
+    >
+      <!-- Lado esquerdo com botão e logo -->
+      <div class="flex items-center gap-4">
+        <button class="p-2 border-r-2 hover:bg-gray-100 cursor-pointer">
+          <i class="ri-menu-line text-xl"></i>
+        </button>
+        <div class="flex items-center gap-1 cursor-pointer">
+          <i class="ri-youtube-fill text-3xl text-red-600"></i>
+          <span class="font-semibold text-xl">Youtube</span>
+          <span class="text-sm text-gray-600">BR</span>
+        </div>
+      </div>
+
+      <form class="flex-1 max-w-2xl mx-1 flex">
+        <input
+          type="text"
+          placeholder="Pesquisar"
+          class="flex-1 px-3 border border-gray-300 rounded-l-full rounded-r-0 w-1/2"
+        />
+        <button
+          class="px-4 py-3 bg-gray-100 border-l-0 border-gray-300 rounded-r-full"
+        >
+          <i class="ri-search-line"></i>
+        </button>
+        <button
+          class="ml-2 px-4 py-2 bg-gray-100 rounded-full hover:bg-green-400"
+        >
+          <i class="ri-mic-line"></i>
+        </button>
+      </form>
+
+      <div class="flex items-center p-2">
+        <button class="ml-2 w-9 h-9 rounded-3xl hover:bg-gray-100">
+          <i class="ri-video-add-line"></i>
+        </button>
+        <button
+          class="ml-2 w-9 h-9 rounded-3xl hover:bg-gray-100 hover:cursor-pointer"
+        >
+          <i class="ri-notification-2-line"></i>
+        </button>
+        <button
+          class="ml-3 w-9 h-9 rounded-3xl bg-orange-600 text-white font-bold"
+        >
+          SA
+        </button>
+      </div>
+    </header>
+
+    <div class="flex pt-14">
+      <aside class="fixed left-0 top-14 w-60 pt-4">
+        <nav class="space-y-1">
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 bg-gray-100 hover:bg-gray-200"
+          >
+            <i class="ri-home-4-line"></i>
+            <span class="text-sm font-medium">Início</span>
+          </a>
+
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 bg-gray-50 hover:bg-gray-100"
+          >
+            <i class="ri-compass-discover-line"></i>
+            <span class="text-sm font-medium">Explorar</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 bg-gray-50 hover:bg-gray-100"
+          >
+            <i class="ri-play-list-add-line"></i>
+            <span class="text-sm font-medium">Inscrições</span>
+          </a>
+
+          <hr class="mx-6 my-3 text-gray-400" />
+
+          <a
+            href="#"
+            class="flex items-center gap-6 px-6 py-2 bg-gray-50 hover:bg-gray-100"
+          >
+            <i class="ri-history-line"></i>
+            <span class="text-sm font-medium">Historico</span>
+          </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-6 px-6 py-2 bg-gray-50 hover:bg-gray-100"
+            >
+              <i class="ri-time-line"></i>
+              <span class="text-sm font-medium">Assistir mais tarde</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-6 px-6 py-2 bg-gray-50 hover:bg-gray-100"
+            >
+              <i class="ri-thumb-up-fill"></i>
+              <span class="text-sm font-medium">Vídeos Marcados</span>
+            </a>
+          
+          <hr class="mx-6 my-3 text-gray-600" />
+          <h3 class="mx-5 my-3 text-sm font-medium text-gray-900">Iscrições</h3>
+          <a
+              href="#"
+              class="flex items-center gap-6 px-6 py-2 bg-gray-50 hover:bg-gray-100"
+            >
+             <div class="w-6 h-6 bg-red-600 rounded-2xl"></div>
+              <span class="text-sm font-medium">Tech Cannel</span>
+            </a>
+          <a
+              href="#"
+              class="flex items-center gap-6 px-6 py-2 bg-gray-50 hover:bg-gray-100"
+            >
+             <div class="w-6 h-6  bg-amber-600 rounded-2xl"></div>
+              <span class="text-sm font-medium">Radio Cannel</span>
+            </a>
+          <a
+              href="#"
+              class="flex items-center gap-6 px-6 py-2 bg-gray-50 hover:bg-gray-100"
+            >
+             <div class="w-6 h-6 bg-green-600 rounded-2xl"></div>
+              <span class="text-sm font-medium">GamesCannel</span>
+            </a>
+          </a>
+        </nav>
+      </aside>
+    </div>
+
+    <main class="flex-1 ml-60 py-6 ">
+      <div class="flex-1 gap-3 mb-5 ouverflow-x-auto pb-2 pt-4 ">
+        <button class="px-3 py-1 ml-2 mb-5 bg-gray-900 text-white rounded-lg text-sm  whitespace-nowrap">Tudo</button>
+        <button class="px-3 py-1 ml-2 mb-5 bg-gray-100 text-black rounded-lg text-sm  whitespace-nowrap">Músicas</button>
+        <button class="px-3 py-1 ml-2 mb-5 bg-gray-100 text-black rounded-lg text-sm  whitespace-nowrap">Podcast</button>
+        <button class="px-3 py-1 ml-2 mb-5 bg-gray-100 text-black rounded-lg text-sm  whitespace-nowrap">Notícias</button>
+        <button class="px-3 py-1 ml-2 mb-5 bg-gray-100 text-black rounded-lg text-sm  whitespace-nowrap">Games</button>
+        <button class="px-3 py-1 ml-2 mb-5 bg-gray-100 text-black rounded-lg text-sm  whitespace-nowrap">Vídeos Infantil</button>
+      
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3" id="videos"></div>
+      </div>
+    </main>
+  
+  
+
+   <script>
+     const videos =[
+    {title:"Curso Completo de Tailwind Css", chanel:"TEch Channel", views: "139mil",time:"há 2 dias", duration:"2:34"},
+    {title:"Mundo Animal", chanel:"Meio Ambiente", views: "139mi",time:"1mês", duration:"3:03"},
+    {title:"As Praias mais Bonitas do Mundo", chanel:"Mochilão", views: "500mil",time:"há 1 dias", duration:"1:14"},
+    {title:"As mais tocas de 2025", chanel:"Musica do Bao", views: "900mil",time:"há 1 semana", duration:"5:34"},
+    {title:"JavaScript do Zero", chanel:"TEch Channel", views: "10 mil",time:"há 2 dias", duration:"1:24"},
+    {title:"Deus é amor", chanel:"Deus to Poderoso", views: "2bi",time:"há 2 horas", duration:"2:34"},
+    {title:"Arquitetura de Microsserviços", chanel:"TEch Channel", views: "139mil",time:"há 2 dias", duration:"2:34"},
+    {title:"TypeScript do Zero", chanel:"TEch Channel", views: "139mil",time:"há 2 dias", duration:"4:34"},
+    {title:"Curso Completo de Tailwind Css", chanel:"TEch Channel", views: "139mil",time:"há 2 semanas", duration:"3:30"},
+    {title:"Curso Completo de Banco de Dados", chanel:"TEch Channel", views: "139mil",time:"há 2 dias", duration:"2:34"},
+    {title:"Curso Completo de Python", chanel:"TEch Channel", views: "139mil",time:"há 8 dias", duration:"5:34"},
+    {title:"Curso Completo de IA", chanel:"TEch Channel", views: "139mil",time:"há 2 anos", duration:"1:54"}
+
+     ];
+
+    const container =document.getElementById("videos")
+
+   videos.forEach ( (video, i) =>{
+    const videoCArd = document.createElement('article');
+
+    videoCArd.className = 'cursor-pointer'
+
+    videoCArd.innerHTML =`
+    
+    <div class="relative ml-2 mr-3 bg-gray-200 rounded-xl overflow-hidden">
+      <img src="https://picsum.photos/320/180?random=${i} class="w-full h-full object-cover">
+      <span class="absolute bottom-2 right-2 bg-black bg-opacity-80 text-sm text-white text-xs px-1 rounded-2xl">${video.duration}</span>
+    </div>
+
+    <div class="flex gap-3 mt-3"> 
+        <div>
+           <h3 class="font-medium text-sm line-clamp-2">${video.title}</h3>
+           <p class="text-sm text-gray-600 mt-1">${video.chanel}</p>
+           <p class="text-sm text-gray-600">${video.isLive ? `${video.views} assistindo ${video.time}` : `${video.views} visualizações • ${video.time}`}</p>
+         </div>
+    </div>
+
+    `;
+    container.appendChild(videoCArd)
+   })
+
+   </script>
+</body>
+</html>
